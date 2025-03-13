@@ -1,13 +1,14 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 #explanation {
@@ -27,57 +28,50 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 12px;
+    margin-bottom: 25px;
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .form-container input, .form-container select {
-    padding: 15px;
-    font-size: 1.5rem;
+    padding: 12px;
+    font-size: 1.3rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
 }
 
 .date-selectors {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
     justify-content: center;
 }
 
 .date-selectors select {
     flex: 1;
-    padding: 15px;
-    font-size: 1.5rem;
+    padding: 12px;
+    font-size: 1.3rem;
     border: 1px solid #ccc;
     border-radius: 8px;
-    max-width: 120px;
-    height: 50px;
-}
-
-.date-selectors select {
-    overflow-y: auto;
-}
-
-.date-selectors select option {
-    padding: 8px;
+    max-width: 110px;
+    height: 46px;
 }
 
 .form-container button {
     padding: 15px 30px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
 }
 
 .form-container button:hover {
@@ -85,7 +79,7 @@ body {
 }
 
 .message {
-    margin-bottom: 30px;
+    margin: 20px 0;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -95,16 +89,16 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(38, 15px);
+    grid-template-columns: repeat(52, 12px);
     gap: 2px;
     justify-content: center;
-    max-width: 100%;
-    max-height: none;
-    margin-top: 10px;
+    max-width: calc(100% - 40px);
+    margin: 30px auto 0;
+    padding: 0 20px;
 }
 
 .square {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     background-color: #ccc;
 }
